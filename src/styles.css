@@ -14,6 +14,26 @@ body{
   display:  flex;
   justify-content: center;
   align-items: center;
+  background-color: grey;
+  height: 100vh;
+}
+.content{
+  background-color: white;
+  border-radius: 15px;
+  width: 960px;
+  height:50%;
+  justify-content: center;
+  position: relative;
 }
 
+.title{
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.form-group{
+  height:45px;
+  width: 100%;
+  border-radius: 25px;
+}
 
