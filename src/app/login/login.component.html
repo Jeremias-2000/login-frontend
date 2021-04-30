@@ -1,28 +1,31 @@
 <p>login works</p>
 <div class="container">
   <div class="content">
-    <h2>
-       "
-       Faça seu login
-       "</h2>
+    <h1>
+Faça seu login</h1>
        <p class="description">use seu email para criar uma conta.</p>
 
-    <form #oginform = "ngForm" (ngSubmit) = "login()">
+    <form #loginform = "ngForm" (ngSubmit) = "login()">
 
       <form class="form">
 
 
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <label class= "label-input" for="">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          </label>
+
+          <label class= "label-input" for="">
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </label>
 
 
-
-      <div class="form-group">
-
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-      </div>
-
-        <button type="submit" class="btn btn-info">Login</button>
-        <a class="password" href="#">Esqueceu a senha?</a>
     </form>
+    <label class="label-input">
+      <a class="password" href="#">Esqueceu a senha?</a>
+    </label>
+    <form>
+      <button type="submit" class="btn btn-info">Login</button>
+    </form>
+
     </form>
 </div>
